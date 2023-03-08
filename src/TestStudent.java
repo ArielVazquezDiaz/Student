@@ -2,18 +2,20 @@ public class TestStudent {
     public static void main(String[] args) {
         System.out.println("Probando clase Student");
         //los metodos que me permiten indiar que voy a construir un metodo se llama constructor
-        Student SuNombre = new Student();
+        Student SuNombre = new Student(
+                22670036L,
+                "ariel",
+                "Vazquez Diaz",
+                "Informatica",
+                2);
 
-        SuNombre.setName("Ariel");
-        SuNombre.setLastname("Vazquez Diaz");
-        SuNombre.setControlNumber(Long.parseLong("22670036"));
+        SuNombre.toString();
+        SuNombre.setControlNumber(22670008);
+        SuNombre.setName("Mario");
+        SuNombre.setLastname("Hasin");
         SuNombre.setCareer("Informatica");
-        SuNombre.setSemester(Short.parseShort("2"));
+        SuNombre.setSemester(2);
+        SuNombre.toString();
 
-        System.out.println("El nombre es: " + SuNombre.getName());
-        System.out.println("El apellido es: " + SuNombre.getLastname());
-        System.out.println("El numero de control es: " + SuNombre.getControlNumber());
-        System.out.println("El nombre de la carrera es: " + SuNombre.getCareer());
-        System.out.println("Semestre es: " + SuNombre.getSemester());
     }
 }
